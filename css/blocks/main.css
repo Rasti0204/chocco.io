@@ -248,6 +248,8 @@ img {
 
 .headline__subtitle {
   padding: 0 26%;
+  color: #666666;
+  margin-bottom: 55px;
 }
 
 .benefits {
@@ -262,7 +264,7 @@ img {
 .benefits__item:before {
   content: url("../../img/decor/circle.png");
   position: absolute;
-  top: 30px;
+  top: 55px;
   right: 0;
   transform: translatex(50%);
 }
