@@ -18,13 +18,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
+  /* min-width: $containerWidth + 20px; */
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
   width: 940px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -227,7 +228,8 @@ img {
 }
 
 .order-section {
-  background: url("../../img/decor/pattern.jpg") center center/cover no-repeat;
+  background: url("../../img/decor/pattern.jpg") center center no-repeat;
+  background-size: cover;
   position: relative;
 }
 .order-section:before {
@@ -459,6 +461,9 @@ img {
   display: flex;
   margin-bottom: 18px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   flex: 1;
@@ -486,6 +491,10 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.form__controls:last-child {
+  margin-bottom: 0;
 }
 
 .forms__btns {
@@ -497,6 +506,10 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin-right: 29px;
+}
+.radio:last-child {
+  margin-right: 0;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -518,6 +531,7 @@ img {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
@@ -530,10 +544,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.radio__title {
-  margin: 0px 29px 10px 8px;
 }
 
 .fixed-menu {

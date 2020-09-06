@@ -8,14 +8,14 @@ $darkGreen:#365a49;
 
 // z-indexes
 $z-fixed-menu: 100;
+
+
+
 // normalize
-
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
 //setup
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap');
-
 @import url("blocks/_layout");
 
 
@@ -36,13 +36,14 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
+    /* min-width: $containerWidth + 20px; */
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
     width: $containerWidth;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -268,7 +269,8 @@ img {
 }
 
 .order-section {
-    background: url("../../img/decor/pattern.jpg") center center/cover no-repeat;
+    background: url("../../img/decor/pattern.jpg") center center no-repeat;
+    background-size: cover;
     position: relative;
 
     &:before {
@@ -526,6 +528,9 @@ img {
 .form__row {
     display: flex;
     margin-bottom: 18px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .form__block {
@@ -558,6 +563,11 @@ img {
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .forms__btns {
@@ -569,6 +579,10 @@ img {
     display: flex;
     cursor: pointer;
     user-select: none;
+    margin-right: 29px;
+    &:last-child {
+        margin-right: 0;
+    }
    
     &--checkbox {
         .radio__visible {
@@ -597,6 +611,7 @@ img {
     position: relative;
     border-radius: 50%;
     background:#fff;
+    margin-right: 10px;
 
     &:before {
         content:"";
@@ -612,10 +627,6 @@ img {
     }
 }
 
-
-.radio__title {
-    margin: 0px 29px 10px 8px;
-}
 
 //fixed menu
 
