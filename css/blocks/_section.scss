@@ -1,0 +1,80 @@
+
+
+//section
+.section {
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--font-color--green {
+        color: $darkGreen;
+
+        .section__title {
+            color: inherit;
+        }
+    }
+}
+
+.order-section {
+    background: url("../img/decor/pattern.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: url("../img/decor/leaf-mint.png");
+        position: absolute;
+        right: 3px;
+        bottom: 81px;
+
+    }
+
+    &:after {
+        content: url("../img/decor/one-blueberry.png");
+        position: absolute;
+        left: 20px;
+        bottom:83px;
+    }
+
+}
+
+.reviews-section {
+    position: relative;
+
+    &:before {
+        content: url("../img/decor/Strawberry.png");
+        position: absolute;
+        right: 15px;
+        top: 36px;
+    }
+
+    &:after {
+        content: url("../img/decor/leaf-berry.png");
+        position: absolute;
+        left: 0;
+        bottom: -150px;
+    }
+}
+.section__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.headline {
+    text-align: center;
+}
+
+.headline__title {
+    margin-bottom: 25px;
+}
+
+.headline__subtitle {
+    padding: 0 26%;
+    color: #666666;
+    margin-bottom: 55px;
+}
