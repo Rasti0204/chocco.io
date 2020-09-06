@@ -68,7 +68,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/decor/big-leaf.png") right bottom no-repeat;
+  background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #86c3d7;
   height: 100vh;
   min-height: 650px;
@@ -79,10 +79,10 @@ img {
   position: absolute;
   bottom: -40px;
   left: 2%;
-  content: url("../../img/decor/green-leaf.png");
+  content: url("../img/decor/green-leaf.png");
 }
 .hero:after {
-  content: url("../../img/decor/berries.png");
+  content: url("../img/decor/berries.png");
   position: absolute;
   bottom: -40px;
   right: 2%;
@@ -98,7 +98,7 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px 0;
-  background: url("../../img/decor/chocolate.png") right center/50% auto no-repeat;
+  background: url("../img/decor/chocolate.png") right center/50% auto no-repeat;
 }
 
 .hero__main-title {
@@ -228,7 +228,7 @@ img {
 }
 
 .order-section {
-  background: url("../../img/decor/pattern.jpg") center center no-repeat;
+  background: url("../img/decor/pattern.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -249,13 +249,13 @@ img {
   position: relative;
 }
 .reviews-section:before {
-  content: url("./../img/decor/Strawberry.png");
+  content: url("../img/decor/Strawberry.png");
   position: absolute;
   right: 15px;
   top: 36px;
 }
 .reviews-section:after {
-  content: url("./../img/decor/leaf-berry.png");
+  content: url("../img/decor/leaf-berry.png");
   position: absolute;
   left: 0;
   bottom: -150px;
@@ -294,7 +294,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/decor/circle.png");
+  content: url("../img/decor/circle.png");
   position: absolute;
   top: 55px;
   right: 0;
@@ -335,10 +335,10 @@ img {
 
 .benefits-section {
   position: relative;
-  background: url("../../img/decor/leaf-pattern.png") left top 57% no-repeat;
+  background: url("../img/decor/leaf-pattern.png") left top 57% no-repeat;
 }
 .benefits-section:before {
-  content: url("../../img/decor/raspberry.png");
+  content: url("../img/decor/raspberry.png");
   position: absolute;
   bottom: -80px;
   left: 0;
@@ -515,7 +515,7 @@ img {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../../img/icons/checkmark.svg") center center no-repeat;
+  background: url("../img/icons/checkmark.svg") center center no-repeat;
 }
 
 .radio__elem {
