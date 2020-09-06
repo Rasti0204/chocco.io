@@ -1,5 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap");
+@import url("blocks/_layout");
 * {
   box-sizing: border-box;
 }
@@ -226,7 +227,36 @@ img {
 }
 
 .order-section {
-  background: url("../../img/decor/pattern.jpg") center center no-repeat;
+  background: url("../../img/decor/pattern.jpg") center center/cover no-repeat;
+  position: relative;
+}
+.order-section:before {
+  content: url("../img/decor/leaf-mint.png");
+  position: absolute;
+  right: 3px;
+  bottom: 81px;
+}
+.order-section:after {
+  content: url("../img/decor/one-blueberry.png");
+  position: absolute;
+  left: 20px;
+  bottom: 83px;
+}
+
+.reviews-section {
+  position: relative;
+}
+.reviews-section:before {
+  content: url("./../img/decor/Strawberry.png");
+  position: absolute;
+  right: 15px;
+  top: 36px;
+}
+.reviews-section:after {
+  content: url("./../img/decor/leaf-berry.png");
+  position: absolute;
+  left: 0;
+  bottom: -150px;
 }
 
 .section__title {
@@ -331,6 +361,12 @@ img {
   transform: translateX(-50%);
   top: -65px;
 }
+.reviews__display:after {
+  content: url("../img/decor/branch.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 .reviews__display-inner {
   display: flex;
@@ -360,6 +396,7 @@ img {
 }
 
 .reviews__text {
+  width: 76%;
   margin-bottom: 36px;
 }
 
@@ -381,8 +418,12 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  /*  &--active {
+         border-color: green;
+     }  
+  */
 }
-.interactive-avatar--active {
+.interactive-avatar:hover {
   border-color: green;
 }
 
@@ -507,6 +548,9 @@ img {
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .fixed-menu__link {
