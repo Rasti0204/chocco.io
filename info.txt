@@ -1,0 +1,18 @@
+blocks >
+	layout.scss
+	hero.scss
+	header.scss
+	features.scss
+	feature.scss
+	btn.scss
+	section.scss
+	benefits.scss
+	benefit.scss
+	benefits-section.scss
+	reviews.scss
+	interactive__avatar.scss
+	form.scss
+	radio.scss
+	fixed-menu.scss
+	reviews-section.scss
+	
