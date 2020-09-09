@@ -3,7 +3,7 @@
 //section
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,16 +25,16 @@
     &:before {
         content: url("../img/decor/leaf-mint.png");
         position: absolute;
-        right: 3px;
-        bottom: 81px;
+        right: rem(3px);
+        bottom: rem(81px);
 
     }
 
     &:after {
         content: url("../img/decor/one-blueberry.png");
         position: absolute;
-        left: 20px;
-        bottom:83px;
+        left: rem(20px);
+        bottom:rem(83px);
     }
 
 }
@@ -45,21 +45,21 @@
     &:before {
         content: url("../img/decor/Strawberry.png");
         position: absolute;
-        right: 15px;
-        top: 36px;
+        right: rem(15px);
+        top: rem(36px);
     }
 
     &:after {
         content: url("../img/decor/leaf-berry.png");
         position: absolute;
         left: 0;
-        bottom: -150px;
+        bottom: rem(-150px);
     }
 }
 .section__title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -70,11 +70,11 @@
 }
 
 .headline__title {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .headline__subtitle {
     padding: 0 26%;
     color: #666666;
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
 }

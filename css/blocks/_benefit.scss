@@ -7,8 +7,8 @@
 
 .benefit__image-wrapper {
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     background: #f2f5f4;
     border-radius: 50%;
@@ -16,8 +16,8 @@
 }
 
 .benefit__icon {
-    width:75px;
-    height: 69px;
+    width:rem(75px);
+    height: rem(69px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,10 +28,14 @@
     position: relative;
     background: url("../img/decor/leaf-pattern.png") left top 57% no-repeat;
 
+    @include tablets {
+        background-position: left top 10%;
+    }
+
     &:before {
         content: url("../img/decor/raspberry.png");
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
     }
 }

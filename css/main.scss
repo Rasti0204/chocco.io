@@ -1,6 +1,12 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+
+//  breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //color
 $blue: #86c3d7;
 $darkGreen:#365a49;
@@ -8,7 +14,7 @@ $darkGreen:#365a49;
 
 // z-indexes
 $z-fixed-menu: 100;
-
+@import "_media.scss";
 
 // normalize
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
@@ -29,6 +35,7 @@ $z-fixed-menu: 100;
 @import "./blocks/_form.scss";
 @import "./blocks/_radio.scss";
 @import "./blocks/_fixed-menu.scss";
+@import "./blocks/hamburger.scss";
 
 
 
