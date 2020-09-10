@@ -43,7 +43,6 @@
 }
 
 
-
 .hero__title-section {
     width: 46%;
 
@@ -56,10 +55,13 @@
         align-items: center;
         text-align: center;
         &:before {
-            content: url("../../img/decor/chocolate768.png");
-            margin-bottom: rem(17px);
+            content:"";
+            margin-bottom: rem(16px);
+            width: rem(516px);
+            height: rem(330px);
+            background: url("../../img/decor/chocolate768.png") center center / contain no-repeat;
         }
-    }
+    }  
 }
 
 .hero__container {
@@ -90,5 +92,9 @@
 
     @include tablets {
         padding: 0 28%;
+    }
+
+    @include phones {
+        padding: 0 16%;   
     }
 }

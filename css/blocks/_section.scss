@@ -67,14 +67,19 @@
 
 .headline {
     text-align: center;
+
 }
 
 .headline__title {
-    margin-bottom: rem(25px);
+    margin-bottom: rem(7px);
 }
 
 .headline__subtitle {
     padding: 0 26%;
     color: #666666;
     margin-bottom: rem(55px);
+
+    @include phones {
+        padding: 0 5%;
+    }
 }

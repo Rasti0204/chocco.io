@@ -3,12 +3,47 @@
 
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
+
+
+.benefits-section {
+    position: relative;
+    background: url("../img/decor/leaf-pattern.png") left top 57% no-repeat;
+
+    @include tablets {
+        background-position: left top 10%;
+    }
+
+    @include phones {
+        background: none;
+    }
+
+    &:before {
+        content: url("../img/decor/raspberry.png");
+        position: absolute;
+        bottom: rem(-80px);
+        left: 0;
+        @include phones {
+            display: none;
+        }
+    }
+}
+
+
 
 .benefits__item {
     flex: 1;
     padding: 0 3%;
     position: relative;
+
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(19px);
+    }
 
     &:before {
         content: url("../img/decor/circle.png");
@@ -16,6 +51,10 @@
         top: rem(55px);
         right: 0;
         transform: translatex(50%);
+
+        @include phones {
+            display: none;
+        }
     }
 
     &:first-child {
