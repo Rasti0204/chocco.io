@@ -1,0 +1,54 @@
+
+.phone-icon {
+    width: 12px;
+    height: 11px;
+
+    &__white {
+        fill: #fff;
+        margin-right: 5px;
+    }
+
+    &__green{
+        fill:#365a49;
+        margin-right: 5px;
+    }
+}
+
+
+.phone-number__icon-elem {
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px);
+}
+
+
+.socials {
+    display: flex;
+}
+
+
+.svg__icon {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+    opacity: 0.3;
+    
+    &:hover {
+        opacity: 1;
+    }
+
+}
+
+.feature__icon__svg {
+    width: 45px;
+    height: 45px;
+    fill: #c6f7ff;;
+    margin-right: rem(7px);
+}
+
+.benefit__icon__svg {
+    width: 73px;
+    height: 68px;
+    fill: #2e2e2d;
+
+}

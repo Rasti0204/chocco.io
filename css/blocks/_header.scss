@@ -53,22 +53,8 @@
 
     &__text {
         white-space: nowrap;
+        &__green {
+            color: $darkGreen;
+        }
     }
-}
-
-.phone-icon {
-    width: 12px;
-    height: 11px;
-}
-
-.phone-icon__white {
-    fill: #fff;
-    margin-right: 5px;
-}
-
-
-.phone-number__icon-elem {
-    width: rem(12px);
-    height: rem(12px);
-    margin-right: rem(6px);
 }

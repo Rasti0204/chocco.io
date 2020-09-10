@@ -1,0 +1,24 @@
+.footer {
+    position: absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    padding: rem(23px) 0;
+    background: #fff;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.contacts__place {
+    color: #000;
+    font-size: rem(21px);
+    font-weight: normal;
+}

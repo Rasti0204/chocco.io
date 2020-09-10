@@ -6,9 +6,15 @@
     cursor: pointer;
     user-select: none;
     margin-right: rem(29px);
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+    
     &:last-child {
         margin-right: 0;
     }
+
    
     &--checkbox {
         .radio__visible {

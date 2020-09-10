@@ -234,21 +234,8 @@ img {
 .phone-number__text {
   white-space: nowrap;
 }
-
-.phone-icon {
-  width: 12px;
-  height: 11px;
-}
-
-.phone-icon__white {
-  fill: #fff;
-  margin-right: 5px;
-}
-
-.phone-number__icon-elem {
-  width: 0.6666666667rem;
-  height: 0.6666666667rem;
-  margin-right: 0.3333333333rem;
+.phone-number__text__green {
+  color: #365a49;
 }
 
 .features {
@@ -344,6 +331,11 @@ img {
   position: absolute;
   left: 1.1111111111rem;
   bottom: 4.6111111111rem;
+}
+
+.map-section {
+  background: url("../../img/decor/map.png") center center no-repeat;
+  background-size: cover;
 }
 
 .reviews-section {
@@ -713,6 +705,11 @@ img {
           user-select: none;
   margin-right: 1.6111111111rem;
 }
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 0.5555555556rem;
+  }
+}
 .radio:last-child {
   margin-right: 0;
 }
@@ -807,4 +804,98 @@ img {
   background: #fff;
   height: 4px;
   border-radius: 15px;
+}
+
+.map-section {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1.2777777778rem 0;
+  background: #fff;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .container__footer {
+    flex-direction: column;
+  }
+}
+
+.contacts__place {
+  color: #000;
+  font-size: 1.1666666667rem;
+  font-weight: normal;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.1666666667rem;
+  color: black;
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.phone-icon {
+  width: 12px;
+  height: 11px;
+}
+.phone-icon__white {
+  fill: #fff;
+  margin-right: 5px;
+}
+.phone-icon__green {
+  fill: #365a49;
+  margin-right: 5px;
+}
+
+.phone-number__icon-elem {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
+}
+
+.socials {
+  display: flex;
+}
+
+.svg__icon {
+  width: 20px;
+  height: 20px;
+  fill: #000000;
+  opacity: 0.3;
+}
+.svg__icon:hover {
+  opacity: 1;
+}
+
+.feature__icon__svg {
+  width: 45px;
+  height: 45px;
+  fill: #c6f7ff;
+  margin-right: 0.3888888889rem;
+}
+
+.benefit__icon__svg {
+  width: 73px;
+  height: 68px;
+  fill: #2e2e2d;
+}
+
+.socials__item {
+  margin-right: 20px;
 }
