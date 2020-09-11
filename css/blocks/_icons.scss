@@ -27,6 +27,16 @@
 }
 
 
+.benefit__icon__svg {
+    width:rem(75px);
+    height: rem(69px);
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+
 .svg__icon {
     width: 20px;
     height: 20px;

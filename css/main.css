@@ -428,6 +428,9 @@ img {
     padding: 0;
     margin-bottom: 1.0555555556rem;
   }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .benefits__item:before {
   content: url("../img/decor/circle.png");
@@ -463,21 +466,17 @@ img {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 7rem;
-  height: 7rem;
+  width: 6.9444444444rem;
+  height: 6.9444444444rem;
   position: relative;
   background: #f2f5f4;
   border-radius: 50%;
   overflow: hidden;
 }
-
-.benefit__icon {
-  width: 4.1666666667rem;
-  height: 3.8333333333rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 480px) {
+  .benefit__image-wrapper {
+    margin-right: 0.3888888889rem;
+  }
 }
 
 .benefit__image {
@@ -486,7 +485,6 @@ img {
 @media screen and (max-width: 480px) {
   .benefit__image {
     margin-bottom: 0;
-    margin-right: 1.1111111111rem;
   }
 }
 
@@ -554,6 +552,11 @@ img {
 .reviews__content {
   flex: 1;
   margin-left: 1.1111111111rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
@@ -678,15 +681,15 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0.5555555556rem;
-}
-.form__controls:last-child {
-  margin-bottom: 0;
 }
 @media screen and (max-width: 480px) {
   .form__controls {
     justify-content: center;
   }
+}
+
+.form__controls--margin {
+  margin-bottom: 0.5555555556rem;
 }
 
 .forms__btns {
@@ -797,6 +800,10 @@ img {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
+    position: fixed;
+    right: 10px;
+    top: 34px;
+    cursor: pointer;
   }
 }
 
@@ -874,6 +881,15 @@ img {
   display: flex;
 }
 
+.benefit__icon__svg {
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
 .svg__icon {
   width: 20px;
   height: 20px;
@@ -899,4 +915,7 @@ img {
 
 .socials__item {
   margin-right: 20px;
+}
+.socials__item:last-child {
+  margin-right: 0;
 }

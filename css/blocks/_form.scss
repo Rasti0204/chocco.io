@@ -66,16 +66,14 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(10px);
-    
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 
     @include phones {
         justify-content: center;
     }
+}
+
+.form__controls--margin {
+    margin-bottom: rem(10px);
 }
 
 .forms__btns {  

@@ -12,21 +12,16 @@
 
 .benefit__image-wrapper {
     display: inline-block;
-    width: rem(126px);
-    height: rem(126px);
+    width: rem(125px);
+    height: rem(125px);
     position: relative;
     background: #f2f5f4;
     border-radius: 50%;
     overflow: hidden;
-}
+    @include phones {
+        margin-right: rem(7px);
+    }
 
-.benefit__icon {
-    width:rem(75px);
-    height: rem(69px);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 
@@ -34,7 +29,6 @@
     margin-bottom: rem(19px);
     @include phones {
         margin-bottom: 0;
-        margin-right: rem(20px);
     }
     
 }
