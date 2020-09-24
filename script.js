@@ -2,7 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 
-const links = document.querySelector('.menu__link__hamburger');
+const links = document.querySelectorAll('.menu__link__hamburger');
 
 
 links.forEach(function(element){

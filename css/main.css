@@ -383,6 +383,10 @@ img {
   }
 }
 
+.section-slider {
+  background-color: #f8faf9;
+}
+
 .benefits {
   display: flex;
 }
@@ -847,6 +851,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1rem;
 }
 .menu__hamburger__item:after {
   content: "";
@@ -856,6 +861,12 @@ img {
   background-color: #fff;
   border-radius: 50%;
   margin-top: 10px;
+}
+.menu__hamburger__item:last-child {
+  margin-bottom: 0;
+}
+.menu__hamburger__item:last-child:after {
+  display: none;
 }
 
 .hamburger--active .hamburger__plank:nth-child(1) {
@@ -985,6 +996,21 @@ img {
 
 .product__container {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  background-color: #f8faf9;
+  background-size: cover;
+}
+
+.arrow__left {
+  position: absolute;
+  left: 0;
+}
+
+.arrow__right {
+  position: absolute;
+  right: 0;
 }
 
 .product__col {
@@ -995,9 +1021,50 @@ img {
   flex-direction: column;
 }
 
+.product__ingridients {
+  margin-bottom: 2.0555555556rem;
+  cursor: pointer;
+}
+
 .product__title {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.1;
   color: #000;
+  text-transform: uppercase;
+  margin-bottom: 1.2222222222rem;
+}
+
+.product__col-ingridients {
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+}
+
+.product__text {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.product__row {
+  display: flex;
+  margin-bottom: 2.6666666667rem;
+}
+
+.product__cell {
+  margin: auto 0;
+  margin-right: 3.0555555556rem;
+}
+.product__cell:last-child {
+  margin-right: 0;
+}
+.product__cell__bold {
+  font-weight: bold;
+  color: #000000;
+}
+
+.product__price {
+  font-size: 3.3333333333rem;
+  text-transform: uppercase;
+  color: #151515;
 }
