@@ -3,8 +3,6 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    background-color: #f8faf9;
-    background-size: cover;
 }
 .arrow__left {
     position: absolute;
@@ -52,6 +50,9 @@
 .product__row {
     display: flex;
     margin-bottom: rem(48px);
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 .product__cell {
     margin: auto 0;
