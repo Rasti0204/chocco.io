@@ -3,7 +3,7 @@ const validateForm = (form, fieldArray) => {
     fieldArray.forEach(field => {
         field.removeClass("input-error");
         if(field.val().trim()===""){
-            field.addClass(".input-error");
+            field.addClass("input-error");
         }
     });
     
